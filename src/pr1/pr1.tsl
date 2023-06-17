@@ -1,0 +1,5 @@
+let (x : Tile ) = import tile1.tl;
+let (y : Tile ) = import tile2.tl; 
+let (z : Tile) = hrepeat 32 hstick x y; 
+let (j : Tile) = hrepeat 32 hstick y x; 
+return vrepeat 32 vstick z j

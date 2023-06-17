@@ -1,0 +1,7 @@
+let (input:Tile) = import tile1.tl ;
+let (base:Tile) = square input ;
+let (topBot:Tile) = hrepeat 5 base ;
+let (sideCol:Tile) = vrepeat 3 base ;
+let (big:Tile) = scale 3 base ;
+let (middle:Tile) = hstick hstick sideCol big sideCol ;
+return vstick vstick topBot middle topBot

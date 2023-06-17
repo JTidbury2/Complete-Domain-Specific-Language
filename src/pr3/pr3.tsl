@@ -1,0 +1,5 @@
+let (x : Tile) = import tile1.tl ; 
+let (top: Tile) = hstick hstick x hreflect x blank size x ; 
+let (bottom: Tile) = hstick hstick blank size x vreflect x vreflect hreflect x ;
+let (base : Tile) = vstick top bottom ;
+return vrepeat 30 hrepeat 10 hstick base hreflect base

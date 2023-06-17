@@ -1,0 +1,1 @@
+au BufRead,BufNewFile *.tsl set filetype=nap

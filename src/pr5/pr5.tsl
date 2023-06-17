@@ -1,0 +1,5 @@
+let (input:Tile) = import tile1.tl ; 
+let (subtile1:Tile) = hrepeat 3 subtile 0 0 6 input ;
+let (subtile2:Tile) = hrepeat 3 subtile 2 2 6 input ;
+let (subtile3:Tile) = hrepeat 3 subtile 4 4 6 input ;
+return vstick (vstick subtile1 subtile2) subtile3
